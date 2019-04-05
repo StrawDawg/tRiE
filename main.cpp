@@ -2,12 +2,13 @@
 
 int main()
 {
-	trie *head = new trie();
+	trie tree;
 
-	head->insert("plop");
-	head->insert("ploop");
-	std::cout << head->search("ploop") << " ";
-	std::cout << head->delete_key(head, "plop") << "\n";
+	tree.insert("arc");
+	tree.insert("plop");
+	std::cout << tree.search("plop") << " ";
+	tree.delete_key("plop");
+	tree.testing();
 	system("pause");
 	return(0);
 }
